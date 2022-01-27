@@ -13,7 +13,7 @@ Video incial:
 Segundo video:
 <https://www.youtube.com/watch?v=s3HuIRD5sUY&list=PLOLrQ9Pn6cay_cQkyg-WYYiJ_EKU8KWKh&index=2>
 
-## Generación del proyecto
+## Generación del proyecto con un simple test
 
 1. Si se quiere crear un ambiente de instalación local al proyecto (Opcional)
 
@@ -129,3 +129,27 @@ $ python3 manage.py createsuperuser       # admin/admin@correo.cl/admin12345
 ```
 
 17. Se puede hacer tests con pytest
+
+## Segunda etapa del proyecto con más tests
+
+18. Crear carpeta fixtures dentro de carpeta dashboard. Los fixtures sirven para poblar la base de datos rápidamente y hacer pruebas.
+Ver archivo interno a la carpeta fixtures, db_admin_fixture.json como ejemplo.
+
+```
+[
+    {
+        "model": "auth.user",
+            "pk": 1,
+            "fields": {
+                "username": "admintest",
+                "password": "passwordtest",
+                "email": "admintest@correo.cl",
+                "is_superuser": true,
+                "is_staff": true,
+                "is_active": true
+
+            }
+    }
+]
+```
+

@@ -1,0 +1,15 @@
+[
+    {
+        "model": "auth.user",
+            "pk": 1,
+            "fields": {
+                "username": "admintest",
+                "password": "pbkdf2_sha256$320000$hWZMx2gQlke8ieaUjB3Xfo$cwc7AiqsBzapn+L4rXDsehyTh+CkWXK+Yamra+ReWM4=",
+                "email": "admintest@correo.cl",
+                "is_superuser": true,
+                "is_staff": true,
+                "is_active": true
+
+            }
+    }
+]
